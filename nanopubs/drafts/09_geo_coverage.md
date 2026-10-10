@@ -63,7 +63,7 @@ whole
 **Quoted Text** (textarea, required) — the **verbatim** sentence from the paper naming *this* area. Character-for-character from the PDF; never paraphrase. Each location needs its own quote.
 
 ```
-
+This study is a retrospective analysis of routinely collected data from patients admitted at Noma Children Hospital, Sokoto, Northwest Nigeria between 1 May 2018 and 1 May 2020.
 ```
 
 <!-- field: quotation-end -->
@@ -77,14 +77,14 @@ whole
 **Short ID for location** (text input, required) — slug for the URI suffix (lowercase, hyphenated), unique per location. E.g. `sado-estuary`, `westerschelde`, `amazon-basin`.
 
 ```
-
+noma-childrens-hospital-sokoto
 ```
 
 <!-- field: location-label -->
 **Area name** (text input, required) — human-readable name as the paper frames it. E.g. `Sado Estuary, Portugal`. Typing this into the form's **location search** geocodes it and fills the geometry.
 
 ```
-
+Noma Children Hospital, Sokoto, Northwest Nigeria
 ```
 
 <!-- field: geometry -->
@@ -105,10 +105,8 @@ coverage
 **Comment** (textarea, required) — one or two sentences on **how the quoted text supports** this being the coverage. Grounded in the paper, no new claims.
 
 ```
-
+The quoted sentence (Abstract, p. 1) states that all study data come from patients admitted to the Noma Children Hospital in Sokoto, Northwest Nigeria; it is the single study site. The hospital's catchment area is not described in the paper.
 ```
-
-### Location B *(duplicate the block above for each further distinct site; delete if only one location)*
 
 ## Publication note
 

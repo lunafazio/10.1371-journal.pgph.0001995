@@ -19,7 +19,7 @@
 Slug becomes part of the nanopub URI. Use kebab-case.
 
 ```
-
+noma-physio-mouth-opening
 ```
 
 <!-- field: label -->
@@ -28,7 +28,7 @@ Slug becomes part of the nanopub URI. Use kebab-case.
 10-200 characters. Length-bounded.
 
 ```
-
+Does mouth opening improve between admission and discharge in noma patients receiving physiotherapy?
 ```
 
 <!-- field: description -->
@@ -37,7 +37,7 @@ Slug becomes part of the nanopub URI. Use kebab-case.
 One coherent sentence/paragraph that names P, I, C, O inline.
 
 ```
-
+Among noma patients (WHO stage 3–4) receiving physiotherapy during initial hospitalization, does mouth opening at hospital discharge differ from baseline mouth opening at hospital admission?
 ```
 
 <!-- field: type -->
@@ -47,7 +47,7 @@ One coherent sentence/paragraph that names P, I, C, O inline.
 - [ ] descriptive research question - (What are the characteristics of X?)
 - [ ] effectiveness research question - (Does approach X work better than Y?)
 - [ ] experience research question - (How do people experience phenomenon X?)
-- [ ] prediction research question - (What outcomes can we expect from X?)
+- [x] prediction research question - (What outcomes can we expect from X?)
 
 <!-- field: populationDescription -->
 ### Description of the population (textarea, required)
@@ -55,7 +55,7 @@ One coherent sentence/paragraph that names P, I, C, O inline.
 Who/what is being studied. Discipline-level concept — not implementation. See `docs/pico-study-outcome-levels.md`.
 
 ```
-
+Noma patients with gangrene or scarring (WHO stages 3 and 4), predominantly children, without prior reconstructive or trismus-release surgery, during their initial hospitalization.
 ```
 
 <!-- field: interventionGroupDescription -->
@@ -64,7 +64,7 @@ Who/what is being studied. Discipline-level concept — not implementation. See 
 The intervention or exposure being examined. Discipline-level concept.
 
 ```
-
+Physiotherapy to improve mouth opening (active and passive mobilization of the temporomandibular joint with soft-tissue stretching) delivered during initial hospitalization.
 ```
 
 <!-- field: comparatorGroupDescription -->
@@ -73,7 +73,7 @@ The intervention or exposure being examined. Discipline-level concept.
 The comparison or control condition. Discipline-level concept.
 
 ```
-
+Baseline mouth opening measurements at hospital admission compared to measurements at hospital discharge.
 ```
 
 <!-- field: outcomeGroupDescription -->
@@ -82,7 +82,7 @@ The comparison or control condition. Discipline-level concept.
 What outcomes are being measured. The kind of measurement, not the value.
 
 ```
-
+Change in mouth opening (mm) between admission and discharge.
 ```
 
 ## Publication note

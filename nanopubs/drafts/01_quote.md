@@ -32,13 +32,18 @@ Format: starts with `10.` — bare DOI, **NOT** `https://doi.org/...` form.
 
 Verbatim from the paper PDF in `paper/`. Character-for-character. ≤ 500 chars in whole-text mode.
 
-> _Read the PDF first. Don't paraphrase from memory. See `docs/verify-before-drafting.md`._
+Source: Abstract, p. 1. Verification: matched verbatim against `pdftotext` extraction (whitespace-normalised); `verify_quote` (forrt-research MCP) was not available in the analysis session — **unverified by verify_quote; re-run before publishing**.
 
 ```
-
+The mean difference in the mouth opening from admission to discharge was 6.9mm (95% CI: 5.4 to 8.3, p < 0.0001).
 ```
 
-Character count: ___ / 500.
+Character count: 112 / 500.
+
+Alternative candidates (also matched against the extracted text):
+
+- Abstract, p. 1: `Increased number of physiotherapy sessions and patient age above three years were significant predictors of improvement in mouth opening (p-value 0.011, 0.001 respectively).` (173 chars)
+- Results, p. 7: `Being greater than age 3 accounted for a 4.8mm increase in mouth opening in the fully adjusted model (95% CI: 2.2 to 7.5mm).` (124 chars)
 
 <!-- field: quotation-end -->
 ### End of quotation (optional - use when quoting beginning and end of a longer passage, max. 500 characters) (textarea, optional)
