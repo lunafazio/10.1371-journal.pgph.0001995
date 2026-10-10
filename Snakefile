@@ -1,4 +1,4 @@
-# Snakefile — orchestrates the replication pipeline end-to-end.
+# Snakefile — orchestrates the reproduction pipeline end-to-end.
 # Each rule executes a jupytext notebook (the notebook is the source of truth).
 #
 # Usage:

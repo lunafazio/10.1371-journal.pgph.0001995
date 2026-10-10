@@ -1,6 +1,6 @@
 # Published nanopub chain — URI registry
 
-This file is the canonical registry of published nanopub URIs for this replication. Update it as you publish each step.
+This file is the canonical registry of published nanopub URIs for this computational reproduction. Update it as you publish each step.
 
 ## Chain
 

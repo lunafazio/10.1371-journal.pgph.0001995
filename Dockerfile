@@ -1,7 +1,7 @@
 FROM ghcr.io/prefix-dev/pixi:0.68.1
 
 LABEL org.opencontainers.image.source="https://github.com/lunafazio/10.1371-journal.pgph.0001995"
-LABEL org.opencontainers.image.description="Replication study container for 10.1371-journal.pgph.0001995"
+LABEL org.opencontainers.image.description="Computational reproduction container for 10.1371-journal.pgph.0001995"
 LABEL org.opencontainers.image.licenses="MIT"
 
 WORKDIR /app

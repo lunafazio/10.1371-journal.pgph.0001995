@@ -44,7 +44,7 @@ URL = (
 EXPECTED_SHA256: str | None = "81dafc1d7ed0b3b5a97c98f6d0439c685f786e2e3f0773d58723aff84986a658"
 
 # %%
-req = urllib.request.Request(URL, headers={"User-Agent": "forrt-replication/1.0"})
+req = urllib.request.Request(URL, headers={"User-Agent": "forrt-reproduction/1.0"})
 with urllib.request.urlopen(req, timeout=120) as resp:
     payload = resp.read()
 OUT.write_bytes(payload)

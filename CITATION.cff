@@ -32,7 +32,8 @@ identifiers:
   #   - type: doi   value: <version DOI>  "Version DOI for vX.Y.Z — pins this exact release; cite this from nanopubs"
   #   - type: swh   value: swh:1:rev:<commit>;origin=<repo>  "Software Heritage ID of the vX.Y.Z source tree"
 keywords:
-  - replication
+  - reproduction
+  - computational reproducibility
   - reproducibility
   - FORRT
   - nanopublication

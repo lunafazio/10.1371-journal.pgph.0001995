@@ -6,15 +6,15 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![DOI](https://zenodo.org/badge/DOI/{{ZENODO_DOI}}.svg)]({{ZENODO_DOI}})
 [![FAIR4RS](https://img.shields.io/badge/FAIR4RS-conformant-brightgreen)](docs/fair4rs-checklist.md)
-[![FORRT](https://img.shields.io/badge/FORRT-replication-blue)](https://forrt.org/)
+[![FORRT](https://img.shields.io/badge/FORRT-reproduction-blue)](https://forrt.org/)
 [![Science Live](https://img.shields.io/badge/Science%20Live-nanopub%20chain-purple)](nanopubs/PUBLISHED.md)
 [![RO-Crate](https://img.shields.io/badge/RO--Crate-1.2-orange)](ro-crate-metadata.json)
 [![Software Heritage](https://archive.softwareheritage.org/badge/origin/https://github.com/lunafazio/10.1371-journal.pgph.0001995/)](https://archive.softwareheritage.org/browse/origin/?origin_url=https://github.com/lunafazio/10.1371-journal.pgph.0001995)
 
-> **Physiotherapy and associated factors affecting mouth opening changes in noma patients during initial hospitalization at an MSF-supported hospital in Northwest Nigeria—A retrospective cohort study** — replication study.
+> **Physiotherapy and associated factors affecting mouth opening changes in noma patients during initial hospitalization at an MSF-supported hospital in Northwest Nigeria—A retrospective cohort study** — computational reproduction with reconstructed code.
 > Reference paper: [10.1371/journal.pgph.0001995](https://doi.org/10.1371/journal.pgph.0001995)
 
-This is a self-contained replication of the headline claim of the reference paper. It produces a reproducible computational pipeline, a Zenodo-archived release with a citable DOI, and a FORRT-tagged nanopublication chain on the [Science Live platform](https://platform.sciencelive4all.org).
+This is a self-contained computational reproduction of the headline claim of the reference paper, re-running the analysis on the authors' published data (S1 Data) with code reconstructed from the paper's methods description (no original code was published). It produces a reproducible computational pipeline, a Zenodo-archived release with a citable DOI, and a FORRT-tagged nanopublication chain on the [Science Live platform](https://platform.sciencelive4all.org).
 
 ---
 

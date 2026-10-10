@@ -49,7 +49,7 @@
     {
       "@id": "Snakefile",
       "@type": ["File", "SoftwareSourceCode", "ComputationalWorkflow"],
-      "name": "Replication pipeline",
+      "name": "Reproduction pipeline",
       "description": "Snakemake workflow orchestrating data download, cleaning, analysis, and figure generation.",
       "programmingLanguage": { "@id": "https://w3id.org/workflowhub/workflow-ro-crate#snakemake" },
       "input": [{ "@id": "paper/" }, { "@id": "pixi.toml" }, { "@id": "pixi.lock" }],

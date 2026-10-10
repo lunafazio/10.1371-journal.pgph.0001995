@@ -29,7 +29,7 @@ Human-readable title.
 
 - [ ] Replication Study - replication with different methodology or conditions
 - [ ] Reproduction/Replication Study - study that is both, reproduction and replication
-- [ ] Reproduction Study - direct reproduction: same methodology, same tools
+- [x] Reproduction Study - direct reproduction: same methodology, same tools
 
 <!-- field: claim -->
 ### Choose FORRT claim (search/select, required)

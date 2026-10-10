@@ -1,6 +1,6 @@
-# `notebooks/` — the replication pipeline
+# `notebooks/` — the reproduction pipeline
 
-The replication is implemented as a sequence of jupytext-paired notebooks. The `.py` files are the **source of truth** (committed); the `.ipynb` files are gitignored regenerable artefacts.
+The reproduction is implemented as a sequence of jupytext-paired notebooks. The `.py` files are the **source of truth** (committed); the `.ipynb` files are gitignored regenerable artefacts.
 
 ## Convention
 

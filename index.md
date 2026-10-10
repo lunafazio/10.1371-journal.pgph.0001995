@@ -1,13 +1,13 @@
 # 10.1371-journal.pgph.0001995
 
-> **Physiotherapy and associated factors affecting mouth opening changes in noma patients during initial hospitalization at an MSF-supported hospital in Northwest Nigeria—A retrospective cohort study** — replication study.
+> **Physiotherapy and associated factors affecting mouth opening changes in noma patients during initial hospitalization at an MSF-supported hospital in Northwest Nigeria—A retrospective cohort study** — computational reproduction with reconstructed code.
 >
 > Reference paper: [10.1371/journal.pgph.0001995](https://doi.org/10.1371/journal.pgph.0001995)
 
-This repository is a self-contained replication of the headline claim from the reference paper above. It produces:
+This repository is a self-contained computational reproduction of the headline claim from the reference paper above: the authors' published data (S1 Data) re-analysed with code reconstructed from the paper's methods description (no original code was published). It produces:
 
 - A reproducible computational pipeline (Snakefile + notebooks).
-- A FORRT-tagged nanopublication chain on the [Science Live platform](https://platform.sciencelive4all.org), documenting the claim, the replication design, and the outcome with full provenance.
+- A FORRT-tagged nanopublication chain on the [Science Live platform](https://platform.sciencelive4all.org), documenting the claim, the reproduction design, and the outcome with full provenance.
 - A Zenodo-archived release (source + container image) with a citable DOI.
 
 ## Quick start
