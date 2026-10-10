@@ -1,18 +1,18 @@
-# {{REPO_NAME}}
+# 10.1371-journal.pgph.0001995
 
-[![CI](https://github.com/{{REPO_ORG}}/{{REPO_NAME}}/actions/workflows/ci.yml/badge.svg)](https://github.com/{{REPO_ORG}}/{{REPO_NAME}}/actions/workflows/ci.yml)
-[![Jupyter Book](https://github.com/{{REPO_ORG}}/{{REPO_NAME}}/actions/workflows/jupyter-book.yml/badge.svg)](https://{{REPO_ORG}}.github.io/{{REPO_NAME}}/)
-[![Docker](https://github.com/{{REPO_ORG}}/{{REPO_NAME}}/actions/workflows/docker.yml/badge.svg)](https://github.com/{{REPO_ORG}}/{{REPO_NAME}}/pkgs/container/{{REPO_NAME}})
+[![CI](https://github.com/lunafazio/10.1371-journal.pgph.0001995/actions/workflows/ci.yml/badge.svg)](https://github.com/lunafazio/10.1371-journal.pgph.0001995/actions/workflows/ci.yml)
+[![Jupyter Book](https://github.com/lunafazio/10.1371-journal.pgph.0001995/actions/workflows/jupyter-book.yml/badge.svg)](https://lunafazio.github.io/10.1371-journal.pgph.0001995/)
+[![Docker](https://github.com/lunafazio/10.1371-journal.pgph.0001995/actions/workflows/docker.yml/badge.svg)](https://github.com/lunafazio/10.1371-journal.pgph.0001995/pkgs/container/10.1371-journal.pgph.0001995)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![DOI](https://zenodo.org/badge/DOI/{{ZENODO_DOI}}.svg)]({{ZENODO_DOI}})
 [![FAIR4RS](https://img.shields.io/badge/FAIR4RS-conformant-brightgreen)](docs/fair4rs-checklist.md)
 [![FORRT](https://img.shields.io/badge/FORRT-replication-blue)](https://forrt.org/)
 [![Science Live](https://img.shields.io/badge/Science%20Live-nanopub%20chain-purple)](nanopubs/PUBLISHED.md)
 [![RO-Crate](https://img.shields.io/badge/RO--Crate-1.2-orange)](ro-crate-metadata.json)
-[![Software Heritage](https://archive.softwareheritage.org/badge/origin/https://github.com/{{REPO_ORG}}/{{REPO_NAME}}/)](https://archive.softwareheritage.org/browse/origin/?origin_url=https://github.com/{{REPO_ORG}}/{{REPO_NAME}})
+[![Software Heritage](https://archive.softwareheritage.org/badge/origin/https://github.com/lunafazio/10.1371-journal.pgph.0001995/)](https://archive.softwareheritage.org/browse/origin/?origin_url=https://github.com/lunafazio/10.1371-journal.pgph.0001995)
 
-> **{{PAPER_TITLE}}** — replication study.
-> Reference paper: [{{PAPER_DOI}}](https://doi.org/{{PAPER_DOI}})
+> **Physiotherapy and associated factors affecting mouth opening changes in noma patients during initial hospitalization at an MSF-supported hospital in Northwest Nigeria—A retrospective cohort study** — replication study.
+> Reference paper: [10.1371/journal.pgph.0001995](https://doi.org/10.1371/journal.pgph.0001995)
 
 This is a self-contained replication of the headline claim of the reference paper. It produces a reproducible computational pipeline, a Zenodo-archived release with a citable DOI, and a FORRT-tagged nanopublication chain on the [Science Live platform](https://platform.sciencelive4all.org).
 
@@ -21,8 +21,8 @@ This is a self-contained replication of the headline claim of the reference pape
 ## Quick start
 
 ```bash
-git clone https://github.com/{{REPO_ORG}}/{{REPO_NAME}}.git
-cd {{REPO_NAME}}
+git clone https://github.com/lunafazio/10.1371-journal.pgph.0001995.git
+cd 10.1371-journal.pgph.0001995
 pixi install
 pixi run snakemake --cores 1
 ```
@@ -32,10 +32,10 @@ pixi run snakemake --cores 1
 Or with Docker:
 
 ```bash
-docker run --rm ghcr.io/{{REPO_ORG}}/{{REPO_NAME}}:latest
+docker run --rm ghcr.io/lunafazio/10.1371-journal.pgph.0001995:latest
 ```
 
-The Jupyter Book version is at <https://{{REPO_ORG}}.github.io/{{REPO_NAME}}/>.
+The Jupyter Book version is at <https://lunafazio.github.io/10.1371-journal.pgph.0001995/>.
 
 ## Built from a template
 
@@ -117,7 +117,7 @@ For lower-level nanopub work — retraction, superseding, batch publishing — s
 If you use this work, please cite both:
 
 - This software: [`CITATION.cff`](CITATION.cff) → DOI [{{ZENODO_DOI}}]({{ZENODO_DOI}})
-- The original paper: [{{PAPER_DOI}}](https://doi.org/{{PAPER_DOI}})
+- The original paper: [10.1371/journal.pgph.0001995](https://doi.org/10.1371/journal.pgph.0001995)
 
 ## Acknowledgements
 
