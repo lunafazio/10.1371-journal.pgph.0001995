@@ -2,13 +2,13 @@
 
 > This is a working scratchpad for the paper-analysis phase. The output of this file feeds the Quote / AIDA / Claim drafts. It is not itself a nanopub.
 
-**Reference paper:** {{PAPER_TITLE}}
+**Reference paper:** Physiotherapy and associated factors affecting mouth opening changes in noma patients during initial hospitalization at an MSF-supported hospital in Northwest Nigeria—A retrospective cohort study
 
-**DOI:** {{PAPER_DOI}}
+**DOI:** 10.1371/journal.pgph.0001995
 
 **Authors:** _add._
 
-**Year:** {{PAPER_YEAR}}
+**Year:** 2023
 
 ## Headline claim
 

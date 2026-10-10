@@ -1,8 +1,8 @@
-# {{REPO_NAME}}
+# 10.1371-journal.pgph.0001995
 
-> **{{PAPER_TITLE}}** — replication study.
+> **Physiotherapy and associated factors affecting mouth opening changes in noma patients during initial hospitalization at an MSF-supported hospital in Northwest Nigeria—A retrospective cohort study** — replication study.
 >
-> Reference paper: [{{PAPER_DOI}}](https://doi.org/{{PAPER_DOI}})
+> Reference paper: [10.1371/journal.pgph.0001995](https://doi.org/10.1371/journal.pgph.0001995)
 
 This repository is a self-contained replication of the headline claim from the reference paper above. It produces:
 
@@ -13,8 +13,8 @@ This repository is a self-contained replication of the headline claim from the r
 ## Quick start
 
 ```bash
-git clone https://github.com/{{REPO_ORG}}/{{REPO_NAME}}.git
-cd {{REPO_NAME}}
+git clone https://github.com/lunafazio/10.1371-journal.pgph.0001995.git
+cd 10.1371-journal.pgph.0001995
 pixi install
 pixi run snakemake --cores 1
 ```
@@ -22,7 +22,7 @@ pixi run snakemake --cores 1
 Or with Docker:
 
 ```bash
-docker run --rm ghcr.io/{{REPO_ORG}}/{{REPO_NAME}}:latest
+docker run --rm ghcr.io/lunafazio/10.1371-journal.pgph.0001995:latest
 ```
 
 ## Structure
@@ -43,4 +43,4 @@ The published chain is listed in [`nanopubs/PUBLISHED.md`](nanopubs/PUBLISHED.md
 If you use this work, please cite both:
 
 - This software: [`CITATION.cff`](CITATION.cff) → DOI [{{ZENODO_DOI}}]({{ZENODO_DOI}}).
-- The original paper: [{{PAPER_DOI}}](https://doi.org/{{PAPER_DOI}}).
+- The original paper: [10.1371/journal.pgph.0001995](https://doi.org/10.1371/journal.pgph.0001995).
