@@ -45,9 +45,9 @@ Among noma patients (WHO stage 3–4) receiving physiotherapy during initial hos
 
 - [ ] causation research question - (Does factor X cause outcome Y?)
 - [ ] descriptive research question - (What are the characteristics of X?)
-- [ ] effectiveness research question - (Does approach X work better than Y?)
+- [x] effectiveness research question - (Does approach X work better than Y?)
 - [ ] experience research question - (How do people experience phenomenon X?)
-- [x] prediction research question - (What outcomes can we expect from X?)
+- [ ] prediction research question - (What outcomes can we expect from X?)
 
 <!-- field: populationDescription -->
 ### Description of the population (textarea, required)

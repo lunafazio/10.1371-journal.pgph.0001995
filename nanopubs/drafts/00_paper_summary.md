@@ -16,7 +16,9 @@
 
 (Abstract, p. 1.) Status: matched verbatim against `pdftotext` extraction after whitespace normalisation. The `forrt-research` MCP `verify_quote` tool was NOT available in the analysis session, so this is formally **unverified by verify_quote** — re-run `verify_quote` before publishing.
 
-Alternative candidates (see `01_quote.md`): abstract p. 1 predictors sentence; Results p. 7 age-coefficient sentence.
+Alternative candidates: abstract p. 1 predictors sentence; Results p. 7 age-coefficient sentence.
+
+**Chain shape decision:** question-rooted (PICO, effectiveness). The quote draft was dropped; the paper is cited at the AIDA "Supported by other publications" field and at the CiTO step. See `01_pico.md`.
 
 ## Methodology summary
 
