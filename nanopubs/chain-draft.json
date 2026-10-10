@@ -1,0 +1,216 @@
+{
+  "schema_version": "1.0",
+  "kind": "forrt-chain-draft",
+  "chain_shape": "pico",
+  "source": {
+    "repository": "https://github.com/lunafazio/10.1371-journal.pgph.0001995",
+    "commit": "25d01c239a877e600143f19359a0f655209bb266",
+    "figure": "figures/main_result.png"
+  },
+  "steps": [
+    {
+      "step": "01_pico",
+      "template_key": "PICO_RESEARCH_QUESTION",
+      "template_uri": "https://w3id.org/np/RA5e5XeXy_-aNK5giB7kBAEQslTLVydHeM4YYEzhmEE2w",
+      "prefill": {
+        "pico": "noma-physio-mouth-opening",
+        "label": "Does mouth opening improve between admission and discharge in noma patients receiving physiotherapy?",
+        "description": "Among noma patients (WHO stage 3–4) receiving physiotherapy during initial hospitalization, does mouth opening at hospital discharge differ from baseline mouth opening at hospital admission?",
+        "type": "https://w3id.org/sciencelive/o/terms/EffectivenessResearchQuestions",
+        "populationDescription": "Noma patients with gangrene or scarring (WHO stages 3 and 4), predominantly children, without prior reconstructive or trismus-release surgery, during their initial hospitalization.",
+        "interventionGroupDescription": "Physiotherapy to improve mouth opening (active and passive mobilization of the temporomandibular joint with soft-tissue stretching) delivered during initial hospitalization.",
+        "comparatorGroupDescription": "Baseline mouth opening measurements at hospital admission compared to measurements at hospital discharge.",
+        "outcomeGroupDescription": "Change in mouth opening (mm) between admission and discharge."
+      },
+      "provenance": {
+        "pico": "nanopubs/drafts/01_pico.md",
+        "label": "nanopubs/drafts/01_pico.md",
+        "description": "nanopubs/drafts/01_pico.md",
+        "type": "nanopubs/drafts/01_pico.md",
+        "populationDescription": "nanopubs/drafts/01_pico.md",
+        "interventionGroupDescription": "nanopubs/drafts/01_pico.md",
+        "comparatorGroupDescription": "nanopubs/drafts/01_pico.md",
+        "outcomeGroupDescription": "nanopubs/drafts/01_pico.md"
+      },
+      "manual": [
+        "type"
+      ],
+      "published_uri": null
+    },
+    {
+      "step": "02_aida",
+      "template_key": "AIDA_SENTENCE",
+      "template_uri": "https://w3id.org/np/RALmXhDw3rHcMveTgbv8VtWxijUHwnSqhCmtJFIPKWVaA",
+      "prefill": {
+        "aida": "Mouth opening increases between hospital admission and discharge in noma patients who receive physiotherapy during their initial hospitalization.",
+        "topic": [
+          {
+            "uri": "http://www.wikidata.org/entity/Q994794",
+            "label": "noma"
+          },
+          {
+            "uri": "http://www.wikidata.org/entity/Q16643870",
+            "label": "physiotherapy"
+          }
+        ],
+        "st4": [
+          {
+            "publication": "https://doi.org/10.1371/journal.pgph.0001995"
+          }
+        ]
+      },
+      "provenance": {
+        "aida": "nanopubs/drafts/02_aida.md",
+        "topic": "nanopubs/drafts/02_aida.md + Wikidata",
+        "st4": "nanopubs/drafts/02_aida.md"
+      },
+      "published_uri": null
+    },
+    {
+      "step": "03_claim",
+      "template_key": "FORRT_CLAIM",
+      "template_uri": "https://w3id.org/np/RAZWyM8D16ya3S1zhCvrG1f0iSpd9-8onVWp0FTvvX7LQ",
+      "prefill": {
+        "claim": "noma-physio-mouth-opening-increase",
+        "label": "Increase in mouth opening from admission to discharge in noma patients receiving physiotherapy (Oluwalomola et al. 2023)",
+        "forrtType": "https://w3id.org/sciencelive/o/terms/statistical_significance-FORRT-Claim",
+        "source": "https://doi.org/10.1371/journal.pgph.0001995"
+      },
+      "provenance": {
+        "claim": "nanopubs/drafts/03_claim.md",
+        "label": "nanopubs/drafts/03_claim.md",
+        "forrtType": "nanopubs/drafts/03_claim.md",
+        "source": "CITATION.cff"
+      },
+      "manual": [
+        "forrtType"
+      ],
+      "published_uri": null
+    },
+    {
+      "step": "04_study",
+      "template_key": "FORRT_REPLICATION",
+      "template_uri": "https://w3id.org/np/RAuLEjPp-4dTvPwMkfHggTto1CgjIftiGRAgHlyeEonjQ",
+      "prefill": {
+        "study": "noma-physio-mouth-opening-reproduction-study",
+        "label": "Computational reproduction of Oluwalomola et al. (2023): admission-to-discharge mouth opening change in noma patients receiving physiotherapy",
+        "type": "https://w3id.org/sciencelive/o/terms/Reproduction-Study",
+        "scope": "The headline claim of Oluwalomola et al. (2023): among the 91 noma patients (WHO stages 3 and 4) who received physiotherapy during initial hospitalization at Noma Children Hospital, Sokoto, mouth opening at discharge was greater than at admission. In scope is the within-patient admission-to-discharge comparison of mouth opening (mean difference, its confidence interval and significance) and the proportions of patients below 20 mm opening at admission and discharge. The paper's secondary analyses (age-group comparison, bivariate and multivariable predictors of change) were also re-run and are reported as context, but are not part of the claim tested. Out of scope: whether physiotherapy causes the change (the study has no comparison group) and generalisation beyond this cohort.",
+        "methodology": "Computational reproduction on the authors' own published patient-level data (S1 Data, https://doi.org/10.1371/journal.pgph.0001995.s001, 91 rows). No analysis code was published, so the analysis was reconstructed from the paper's methods description in Python (pandas, scipy, statsmodels) and orchestrated with Snakemake as jupytext notebooks: download and checksum S1 Data; tidy it without dropping rows or repairing values (missing values kept; each analysis uses complete cases and reports its n); then re-run every reported test. Headline: paired t-test of discharge versus admission mouth opening. Secondary: independent two-sample t-test of change by age group (0-3 vs >3 years); bivariate one-way ANOVA for categorical factors and simple linear regression for continuous factors; multivariable linear regression of change on number of physiotherapy sessions and age group; proportions below 20 mm at admission and discharge. Each reproduced statistic is compared against the paper's reported value at the paper's precision. Code and results are archived at https://doi.org/10.5281/zenodo.23281226.",
+        "deviation": "(1) The original analysis was run in R with no code, version or packages published; this reproduction uses Python (scipy, statsmodels) with code reconstructed from the methods text. (2) The paper does not define how raw caregiver labels map to \"primary caregiver\", nor how the raw \"Particularities\" defect site is grouped; the mappings used were inferred as the only ones that reproduce the Table 1 counts. (3) The secondary age-dependent analyses (age-group t-test and multivariable regression) reproduce the paper only after excluding one 40-year-old patient, an exclusion the paper does not report; the primary run uses all rows and the exclusion is reported as a separately labelled sensitivity run. (4) Because R's t.test defaults to Welch while the paper does not state which variant was used, both Student (equal variances) and Welch t-tests are reported for the age-group comparison.",
+        "keywordSelection": [
+          {
+            "uri": "http://www.wikidata.org/entity/Q994794",
+            "label": "noma"
+          },
+          {
+            "uri": "http://www.wikidata.org/entity/Q16643870",
+            "label": "physiotherapy"
+          },
+          {
+            "uri": "http://www.wikidata.org/entity/Q936070",
+            "label": "trismus"
+          },
+          {
+            "uri": "http://www.wikidata.org/entity/Q1425625",
+            "label": "reproducibility"
+          }
+        ],
+        "disciplineSelection": {
+          "uri": "http://www.wikidata.org/entity/Q2725393",
+          "label": "global health"
+        }
+      },
+      "provenance": {
+        "study": "nanopubs/drafts/04_study.md",
+        "label": "nanopubs/drafts/04_study.md",
+        "type": "nanopubs/drafts/04_study.md",
+        "scope": "nanopubs/drafts/04_study.md",
+        "methodology": "nanopubs/drafts/04_study.md",
+        "deviation": "nanopubs/drafts/04_study.md",
+        "keywordSelection": "nanopubs/drafts/04_study.md + Wikidata",
+        "disciplineSelection": "nanopubs/drafts/04_study.md + Wikidata"
+      },
+      "manual": [
+        "type"
+      ],
+      "published_uri": null
+    },
+    {
+      "step": "05_outcome",
+      "template_key": "FORRT_REPLICATION_OUTCOME",
+      "template_uri": "https://w3id.org/np/RA2zljn0Nw9SadppOyxZoh-_Rxosslrq-vYG-p9SttnJE",
+      "prefill": {
+        "outcome": "noma-physio-mouth-opening-reproduction",
+        "label": "Computational reproduction of the admission-to-discharge mouth-opening change in noma patients receiving physiotherapy (Oluwalomola et al. 2023)",
+        "repo": "https://doi.org/10.5281/zenodo.23281226",
+        "date": "2026-10-10",
+        "validationStatus": "https://w3id.org/sciencelive/o/terms/Validated",
+        "conclusion": "The headline result reproduces exactly from the authors' published data (S1 Data). Among 91 noma patients receiving physiotherapy during initial hospitalization, mean mouth opening increased from 17.6 mm at admission to 24.5 mm at discharge, a mean difference of 6.9 mm (95% CI 5.4 to 8.3; paired t = 9.4), matching the paper to the reported precision in direction, magnitude and significance. The one discrepancy is the reported degrees of freedom (paper: 91; correct for 91 pairs: 90), a reporting error that does not affect the result. Secondary analyses (age-group comparison, multivariable regression) reproduce only after excluding one 40-year-old patient, an exclusion the paper does not report; these are outside the scope of the claim tested here.",
+        "evidence": "Paired t-test, n = 91: admission mean 17.637 mm, discharge mean 24.516 mm, mean difference 6.879 mm (95% CI 5.429 to 8.329), t = 9.424, df = 90, p = 4.5e-15 (paper: 6.9 mm, 95% CI 5.4 to 8.3, t = 9.4, df = 91, p < 0.001; abstract p < 0.0001 — both true). Patients below 20 mm mouth opening: 47/91 (52%) at admission, 23/91 (25%) at discharge, matching the paper; 25/91 (27%) moved from below 20 mm to 20 mm or above, matching the paper's 27%, with one patient moving the other way (net change 26.4 percentage points). Across all 120 statistics compared in results/summary.csv: 79 match, 9 match if the paper truncated rather than rounded, 32 mismatch; mismatches are confined to the age-dependent analyses (explained by the unreported exclusion of one adult) and to reporting errors (df, Table 1 percentage denominator of 92 instead of 91, \"n = 20\" in Table 2).",
+        "confidenceLevel": "https://w3id.org/sciencelive/o/terms/HighConfidence",
+        "limitations": "This is a computational reproduction on the same data, not an independent replication: it confirms the reported numbers follow from the published dataset, not that they generalise. The study has no comparison group without physiotherapy, so the admission-to-discharge change cannot be attributed causally to physiotherapy; natural recovery, other treatment and the length of hospitalization are not separated from it. The original analysis was run in R without published code; this reproduction uses Python (scipy, statsmodels), so variable recodings (primary caregiver, defect site) were inferred as the only mappings reproducing Table 1. The dataset contains data-quality irregularities that were logged but not corrected: five patients with a 0-day length of stay, four with more physiotherapy sessions than hospital days, missing values (sequestrectomy 10, caregiver 11), and one adult in a paediatric cohort. Length of stay in the data has n = 90, not the n = 75 reported, and no subset reproducing 75 was found."
+      },
+      "provenance": {
+        "outcome": "nanopubs/drafts/05_outcome.md",
+        "label": "nanopubs/drafts/05_outcome.md",
+        "repo": "CITATION.cff",
+        "date": "CITATION.cff",
+        "validationStatus": "nanopubs/drafts/05_outcome.md",
+        "conclusion": "nanopubs/drafts/05_outcome.md",
+        "evidence": "nanopubs/drafts/05_outcome.md",
+        "confidenceLevel": "nanopubs/drafts/05_outcome.md",
+        "limitations": "nanopubs/drafts/05_outcome.md"
+      },
+      "manual": [
+        "validationStatus",
+        "confidenceLevel"
+      ],
+      "published_uri": null
+    },
+    {
+      "step": "06_citation",
+      "template_key": "CITATION_CITO",
+      "template_uri": "https://w3id.org/np/RA43F9EoOuzF0xoNUnCMNyFsfIqlsuWDdPHCnN0wCdCAw",
+      "prefill": {
+        "st02": [
+          {
+            "cites": "http://purl.org/spar/cito/confirms",
+            "cited": "https://doi.org/10.1371/journal.pgph.0001995"
+          }
+        ]
+      },
+      "provenance": {
+        "st02": "cites = nanopubs/drafts/06_citation.md; cited = CITATION.cff references[article]"
+      },
+      "published_uri": null
+    }
+  ],
+  "carry_forward": [
+    {
+      "from": "01_pico",
+      "into": "02_aida",
+      "field": "project"
+    },
+    {
+      "from": "02_aida",
+      "into": "03_claim",
+      "field": "aida"
+    },
+    {
+      "from": "03_claim",
+      "into": "04_study",
+      "field": "claim"
+    },
+    {
+      "from": "04_study",
+      "into": "05_outcome",
+      "field": "study"
+    },
+    {
+      "from": "05_outcome",
+      "into": "06_citation",
+      "field": "work"
+    }
+  ]
+}

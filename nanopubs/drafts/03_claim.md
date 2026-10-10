@@ -12,7 +12,7 @@
 Slug becomes part of the nanopub URI. Use kebab-case.
 
 ```
-
+noma-physio-mouth-opening-increase
 ```
 
 <!-- field: label -->
@@ -21,7 +21,7 @@ Slug becomes part of the nanopub URI. Use kebab-case.
 A descriptive title (not a sentence). Used for searches/discovery.
 
 ```
-
+Increase in mouth opening from admission to discharge in noma patients receiving physiotherapy (Oluwalomola et al. 2023)
 ```
 
 <!-- field: aida -->
@@ -32,7 +32,7 @@ URI of the AIDA published in step 02. Pull from `nanopubs/PUBLISHED.md`.
 > _If the AIDA was published via Nanodash (`w3id.org/np/...` namespace), the platform's search may not find it — paste the URI manually._
 
 ```
-
+«URI of step 02 AIDA — filled by the chain wizard»
 ```
 
 <!-- field: forrtType -->
@@ -46,7 +46,7 @@ Pick one. See `docs/claim-type-vocabulary.md` for the seven options and how to c
 - [ ] descriptive pattern (distribution, trend, proportion)
 - [ ] model performance (accuracy, F1 score, evaluation metrics)
 - [ ] scalability (Computational & Performance)
-- [ ] statistical significance (significant difference, relationship, or effect)
+- [x] statistical significance (significant difference, relationship, or effect)
 
 <!-- field: source -->
 ### Source URI (text input, optional)

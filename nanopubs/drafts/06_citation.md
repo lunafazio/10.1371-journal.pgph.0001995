@@ -12,7 +12,7 @@
 URI of the Outcome published in step 05. Pull from `nanopubs/PUBLISHED.md`.
 
 ```
-
+«URI of step 05 Outcome — filled by the chain wizard»
 ```
 
 ### List citations (repeatable group, required ≥1)
@@ -34,7 +34,7 @@ Write the chosen type in the block below (a vocabulary label such as `cites as a
 > **Note:** `replicates` is NOT in the Science Live dropdown (despite existing in upstream CiTO). When citing a notebook/tutorial that was directly reused, use **`credits`** instead.
 
 ```
-
+confirms
 ```
 
 ##### DOI or other URL of the cited work (text input)
@@ -49,7 +49,7 @@ If the Outcome cites methods papers, related replications, or upstream tools, ad
 
 One line per further citation, in this exact form (each becomes a pre-filled row):
 
-- _Type: ___ → URL: ___
+*(skip — optional)*
 
 ## Publication note
 
