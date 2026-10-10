@@ -35,3 +35,12 @@ https://platform.sciencelive4all.org/np/?uri=<full-URI>
 - Drafts: `nanopubs/drafts/`
 - Form structure: `docs/forrt-form-fields.md`
 - Chain shape decision: `docs/chain-decision-tree.md`
+
+## Release archives
+
+| Release | Archive | Identifier |
+|---|---|---|
+| v0.1.0 | Zenodo concept DOI (all versions) | [10.5281/zenodo.23281225](https://doi.org/10.5281/zenodo.23281225) |
+| v0.1.0 | Zenodo version DOI (source) | [10.5281/zenodo.23281226](https://doi.org/10.5281/zenodo.23281226) |
+| v0.1.0 | Software Heritage | `swh:1:rev:41781b25c0dc3f3794c83c2203924a82328482bb` |
+| v0.1.0 | Docker image (GHCR) | `ghcr.io/lunafazio/10.1371-journal.pgph.0001995:0.1.0` (not archived on Zenodo) |
