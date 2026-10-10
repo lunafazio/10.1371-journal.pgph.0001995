@@ -1,13 +1,9 @@
 # Snakefile — orchestrates the replication pipeline end-to-end.
-#
-# Replace the placeholder rules with your actual replication steps. The
-# canonical pattern is one rule per pipeline stage, and each rule wraps a
-# notebook executed via jupytext (so the notebook stays the source of truth
-# and the Snakefile just sequences them).
+# Each rule executes a jupytext notebook (the notebook is the source of truth).
 #
 # Usage:
-#   snakemake --cores 1                  # run everything
-#   snakemake --cores 1 -n               # dry run
+#   pixi run snakemake --cores 1        # run everything
+#   pixi run snakemake --cores 1 -n     # dry run
 
 NOTEBOOKS = "notebooks"
 DATA = "data"
@@ -15,50 +11,52 @@ RESULTS = "results"
 FIGURES = "figures"
 
 
+def run_nb(name):
+    return f"cd {NOTEBOOKS} && jupytext --to notebook --execute {name}"
+
+
 rule all:
     input:
-        # Replace with your actual final artefacts:
         f"{FIGURES}/main_result.png",
         f"{RESULTS}/summary.csv",
 
 
-# ---------- 01: Data download ----------
-# Every replication MUST be self-contained: data is downloaded by the notebook,
-# never assumed to exist locally. See CLAUDE.md § Self-contained data.
 rule data_download:
+    input:
+        f"{NOTEBOOKS}/01_data_download.py",
     output:
-        f"{DATA}/raw/dataset.zip",
-    log:
-        f"{RESULTS}/logs/01_data_download.log",
+        f"{DATA}/raw/pgph.0001995.s001.xlsx",
+        f"{DATA}/raw/sources.json",
     shell:
-        f"cd {{NOTEBOOKS}} && jupytext --to notebook --execute 01_data_download.py 2>&1 | tee ../{{log}}"
+        run_nb("01_data_download.py")
 
 
-# ---------- 02: Data clean ----------
 rule data_clean:
     input:
-        f"{DATA}/raw/dataset.zip",
+        f"{NOTEBOOKS}/02_data_clean.py",
+        f"{DATA}/raw/pgph.0001995.s001.xlsx",
     output:
-        f"{DATA}/clean/dataset.parquet",
+        f"{DATA}/processed/noma_clean.csv",
     shell:
-        f"cd {{NOTEBOOKS}} && jupytext --to notebook --execute 02_data_clean.py"
+        run_nb("02_data_clean.py")
 
 
-# ---------- 03: Analysis ----------
 rule analysis:
     input:
-        f"{DATA}/clean/dataset.parquet",
+        f"{NOTEBOOKS}/03_analysis.py",
+        f"{DATA}/processed/noma_clean.csv",
     output:
         f"{RESULTS}/summary.csv",
     shell:
-        f"cd {{NOTEBOOKS}} && jupytext --to notebook --execute 03_analysis.py"
+        run_nb("03_analysis.py")
 
 
-# ---------- 04: Figures ----------
 rule figures:
     input:
+        f"{NOTEBOOKS}/04_figures.py",
         f"{RESULTS}/summary.csv",
+        f"{DATA}/processed/noma_clean.csv",
     output:
         f"{FIGURES}/main_result.png",
     shell:
-        f"cd {{NOTEBOOKS}} && jupytext --to notebook --execute 04_figures.py"
+        run_nb("04_figures.py")

@@ -1,0 +1,120 @@
+analysis,statistic,paper_value,reproduced_value,reproduced_unrounded,n,match,note
+a_paired_ttest,mean mouth opening at admission (mm),17.6,17.6,17.63736263736264,91,match,
+a_paired_ttest,mean mouth opening at discharge (mm),24.5,24.5,24.516483516483518,91,match,
+a_paired_ttest,mean difference (mm),6.9,6.9,6.8791208791208796,91,match,
+a_paired_ttest,95% CI lower (mm),5.4,5.4,5.428978175483867,91,match,
+a_paired_ttest,95% CI upper (mm),8.3,8.3,8.329263582757893,91,match,
+a_paired_ttest,t,9.4,9.4,9.424296159748206,91,match,
+a_paired_ttest,df,91.0,90.0,90.0,91,mismatch,paper reports df=91 with n=91; a paired t-test on 91 pairs has df=n-1=90
+a_paired_ttest,p < 0.001 (1=yes),1.0,1.0,1.0,91,match,p=4.50e-15; also < 0.0001 (abstract)
+b_age_ttest[all rows],n aged 0-3,44.0,44.0,44.0,91,match,primary: all 91 rows
+b_age_ttest[all rows],n aged >3,46.0,47.0,47.0,91,mismatch,primary: all 91 rows
+b_age_ttest[all rows],mean change aged 0-3 (mm),4.5,4.5,4.4772727272727275,91,match,primary: all 91 rows
+b_age_ttest[all rows],mean change aged >3 (mm),8.9,9.1,9.127659574468085,91,mismatch,primary: all 91 rows
+b_age_ttest[all rows],difference in mean change (mm),4.5,4.7,4.6503868471953576,91,mismatch,primary: all 91 rows
+b_age_ttest[all rows],95% CI lower (mm),1.7,1.9,1.9010803274711119,91,mismatch,Student pooled-variance CI
+b_age_ttest[all rows],95% CI upper (mm),7.2,7.4,7.399693366919603,91,mismatch,Student pooled-variance CI
+b_age_ttest[all rows],t (Student),3.2,3.4,3.3609273988002384,91,mismatch,
+b_age_ttest[all rows],df (Student),88.0,89.0,89.0,91,mismatch,
+b_age_ttest[all rows],p (Student),0.002,0.001,0.0011460049023278697,91,mismatch,
+b_age_ttest[all rows],t (Welch),3.2,3.4,3.4065598476874634,91,mismatch,R t.test default
+b_age_ttest[all rows],df (Welch),88.0,80.0,79.62610605960016,91,mismatch,R t.test default
+b_age_ttest[all rows],p (Welch),0.002,0.001,0.001033761965199828,91,mismatch,R t.test default
+b_age_ttest[excl. age-40 patient],n aged 0-3,44.0,44.0,44.0,90,match,sensitivity: excludes the single 40-year-old
+b_age_ttest[excl. age-40 patient],n aged >3,46.0,46.0,46.0,90,match,sensitivity: excludes the single 40-year-old
+b_age_ttest[excl. age-40 patient],mean change aged 0-3 (mm),4.5,4.5,4.4772727272727275,90,match,sensitivity: excludes the single 40-year-old
+b_age_ttest[excl. age-40 patient],mean change aged >3 (mm),8.9,9.0,8.956521739130435,90,match (truncated),sensitivity: excludes the single 40-year-old
+b_age_ttest[excl. age-40 patient],difference in mean change (mm),4.5,4.5,4.479249011857708,90,match,sensitivity: excludes the single 40-year-old
+b_age_ttest[excl. age-40 patient],95% CI lower (mm),1.7,1.7,1.7222594903544093,90,match,Student pooled-variance CI
+b_age_ttest[excl. age-40 patient],95% CI upper (mm),7.2,7.2,7.236238533361007,90,match,Student pooled-variance CI
+b_age_ttest[excl. age-40 patient],t (Student),3.2,3.2,3.2287268754166725,90,match,
+b_age_ttest[excl. age-40 patient],df (Student),88.0,88.0,88.0,90,match,
+b_age_ttest[excl. age-40 patient],p (Student),0.002,0.002,0.001748232186488075,90,match,
+b_age_ttest[excl. age-40 patient],t (Welch),3.2,3.3,3.2581815303336277,90,match (truncated),R t.test default
+b_age_ttest[excl. age-40 patient],df (Welch),88.0,78.0,77.769218048305,90,mismatch,R t.test default
+b_age_ttest[excl. age-40 patient],p (Welch),0.002,0.002,0.0016636345433921436,90,match,R t.test default
+c_bivariate_anova[age_group],n,90.0,91.0,91.0,91,mismatch,
+c_bivariate_anova[age_group],count 0-3,44.0,44.0,44.0,91,match,
+c_bivariate_anova[age_group],mean change 0-3 (mm),4.47,4.48,4.4772727272727275,91,match (truncated),
+c_bivariate_anova[age_group],count >3,46.0,47.0,47.0,91,mismatch,
+c_bivariate_anova[age_group],mean change >3 (mm),8.95,9.13,9.127659574468085,91,mismatch,
+c_bivariate_anova[age_group],ANOVA p,0.002,0.001,0.0011460049023278673,91,mismatch,
+c_bivariate_anova[sex],n,91.0,91.0,91.0,91,match,
+c_bivariate_anova[sex],count male,44.0,44.0,44.0,91,match,
+c_bivariate_anova[sex],mean change male (mm),6.97,6.98,6.9772727272727275,91,match (truncated),
+c_bivariate_anova[sex],count female,47.0,47.0,47.0,91,match,
+c_bivariate_anova[sex],mean change female (mm),6.78,6.79,6.787234042553192,91,match (truncated),
+c_bivariate_anova[sex],ANOVA p,0.89,0.9,0.8973396783303408,91,match (truncated),
+c_bivariate_anova[caregiver_group],n,80.0,80.0,80.0,80,match,
+c_bivariate_anova[caregiver_group],count Primary caregiver,72.0,72.0,72.0,80,match,
+c_bivariate_anova[caregiver_group],mean change Primary caregiver (mm),6.83,6.83,6.833333333333333,80,match,
+c_bivariate_anova[caregiver_group],count Not primary caregiver,8.0,8.0,8.0,80,match,
+c_bivariate_anova[caregiver_group],mean change Not primary caregiver (mm),6.0,6.0,6.0,80,match,
+c_bivariate_anova[caregiver_group],ANOVA p,0.75,0.75,0.7510647987136005,80,match,
+c_bivariate_anova[defect_site],n,91.0,91.0,91.0,91,match,
+c_bivariate_anova[defect_site],count Cheek,72.0,72.0,72.0,91,match,
+c_bivariate_anova[defect_site],mean change Cheek (mm),7.22,7.22,7.222222222222222,91,match,
+c_bivariate_anova[defect_site],count Lip,11.0,11.0,11.0,91,match,
+c_bivariate_anova[defect_site],mean change Lip (mm),6.54,6.55,6.545454545454546,91,match (truncated),
+c_bivariate_anova[defect_site],count Nose,6.0,6.0,6.0,91,match,
+c_bivariate_anova[defect_site],mean change Nose (mm),4.33,4.33,4.333333333333333,91,match,
+c_bivariate_anova[defect_site],count No defect,2.0,2.0,2.0,91,match,
+c_bivariate_anova[defect_site],mean change No defect (mm),4.0,4.0,4.0,91,match,
+c_bivariate_anova[defect_site],ANOVA p,0.73,0.73,0.7252189560175062,91,match,
+c_bivariate_anova[sequestrectomy],n,81.0,81.0,81.0,81,match,
+c_bivariate_anova[sequestrectomy],count Yes,26.0,26.0,26.0,81,match,
+c_bivariate_anova[sequestrectomy],mean change Yes (mm),5.92,5.92,5.923076923076923,81,match,
+c_bivariate_anova[sequestrectomy],count No,55.0,55.0,55.0,81,match,
+c_bivariate_anova[sequestrectomy],mean change No (mm),6.49,6.49,6.490909090909091,81,match,
+c_bivariate_anova[sequestrectomy],ANOVA p,0.73,0.73,0.7265765214738829,81,match,
+c_bivariate_ols[physio_sessions; all rows],n,20.0,90.0,90.0,90,mismatch,paper's 'n = 20' is likely a typo
+c_bivariate_ols[physio_sessions; all rows],coefficient (mm per unit),0.28,0.28,0.28191695770275493,90,match,paper's 'n = 20' is likely a typo
+c_bivariate_ols[physio_sessions; all rows],95% CI lower,0.04,0.04,0.038171419080822305,90,match,paper's 'n = 20' is likely a typo
+c_bivariate_ols[physio_sessions; all rows],95% CI upper,0.53,0.53,0.5256624963246875,90,match,paper's 'n = 20' is likely a typo
+c_bivariate_ols[physio_sessions; all rows],p,0.02,0.02,0.023902509807998563,90,match,paper's 'n = 20' is likely a typo
+c_bivariate_ols[length_of_stay_days; all rows],n,75.0,90.0,90.0,90,mismatch,
+c_bivariate_ols[length_of_stay_days; all rows],coefficient (mm per unit),0.14,0.14,0.1376029788953447,90,match,
+c_bivariate_ols[length_of_stay_days; all rows],95% CI lower,0.05,0.05,0.05238421496370703,90,match,
+c_bivariate_ols[length_of_stay_days; all rows],95% CI upper,0.22,0.22,0.22282174282698236,90,match,
+c_bivariate_ols[length_of_stay_days; all rows],p,0.002,0.002,0.0018597423014416685,90,match,
+c_bivariate_ols[length_of_stay_days; excl. stay = 0],n,75.0,85.0,85.0,85,mismatch,sensitivity: drops 5 rows with length of stay 0 days
+c_bivariate_ols[length_of_stay_days; excl. stay = 0],coefficient (mm per unit),0.14,0.14,0.1378096969958553,85,match,sensitivity: drops 5 rows with length of stay 0 days
+c_bivariate_ols[length_of_stay_days; excl. stay = 0],95% CI lower,0.05,0.04,0.04326251962355997,85,mismatch,sensitivity: drops 5 rows with length of stay 0 days
+c_bivariate_ols[length_of_stay_days; excl. stay = 0],95% CI upper,0.22,0.23,0.2323568743681506,85,mismatch,sensitivity: drops 5 rows with length of stay 0 days
+c_bivariate_ols[length_of_stay_days; excl. stay = 0],p,0.002,0.005,0.004787418652438319,85,mismatch,sensitivity: drops 5 rows with length of stay 0 days
+d_multivariable[all rows],Intercept coefficient,0.9,0.7,0.7420182958228623,90,mismatch,primary
+d_multivariable[all rows],Intercept 95% CI lower,-2.6,-2.6,-2.620082255155781,90,match,primary
+d_multivariable[all rows],Intercept 95% CI upper,4.1,4.1,4.104118846801506,90,match,primary
+d_multivariable[all rows],Intercept p,0.589,0.662,0.661990456562966,90,mismatch,primary
+d_multivariable[all rows],physio_sessions coefficient,0.3,0.3,0.3166858510283829,90,match,primary
+d_multivariable[all rows],physio_sessions 95% CI lower,0.1,0.1,0.08731805471055964,90,match,primary
+d_multivariable[all rows],physio_sessions 95% CI upper,0.5,0.5,0.5460536473462062,90,match,primary
+d_multivariable[all rows],physio_sessions p,0.011,0.007,0.007365361980322153,90,mismatch,primary
+d_multivariable[all rows],age_gt3 coefficient,4.8,4.9,4.902096917333015,90,mismatch,primary
+d_multivariable[all rows],age_gt3 95% CI lower,2.2,2.2,2.210448248756899,90,match,primary
+d_multivariable[all rows],age_gt3 95% CI upper,7.5,7.6,7.593745585909131,90,match (truncated),primary
+d_multivariable[all rows],age_gt3 p,0.001,0.0,0.0004943899143636932,90,mismatch,primary
+d_multivariable[excl. age-40 patient],Intercept coefficient,0.9,0.9,0.927115797459211,89,match,sensitivity
+d_multivariable[excl. age-40 patient],Intercept 95% CI lower,-2.6,-2.5,-2.4734270024507587,89,mismatch,sensitivity
+d_multivariable[excl. age-40 patient],Intercept 95% CI upper,4.1,4.3,4.327658597369181,89,mismatch,sensitivity
+d_multivariable[excl. age-40 patient],Intercept p,0.589,0.589,0.5892299915145712,89,match,sensitivity
+d_multivariable[excl. age-40 patient],physio_sessions coefficient,0.3,0.3,0.30123110817330845,89,match,sensitivity
+d_multivariable[excl. age-40 patient],physio_sessions 95% CI lower,0.1,0.1,0.06819462913631105,89,match,sensitivity
+d_multivariable[excl. age-40 patient],physio_sessions 95% CI upper,0.5,0.5,0.5342675872103059,89,match,sensitivity
+d_multivariable[excl. age-40 patient],physio_sessions p,0.011,0.012,0.011902480645310399,89,match (truncated),sensitivity
+d_multivariable[excl. age-40 patient],age_gt3 coefficient,4.8,4.8,4.7748002729291725,89,match,sensitivity
+d_multivariable[excl. age-40 patient],age_gt3 95% CI lower,2.2,2.1,2.0588591313316855,89,mismatch,sensitivity
+d_multivariable[excl. age-40 patient],age_gt3 95% CI upper,7.5,7.5,7.49074141452666,89,match,sensitivity
+d_multivariable[excl. age-40 patient],age_gt3 p,0.001,0.001,0.0007521101496602451,89,match,sensitivity
+e_proportions,n < 20 mm at admission,47.0,47.0,47.0,91,match,
+e_proportions,% < 20 mm at admission,52.0,52.0,51.64835164835165,91,match,
+e_proportions,n < 20 mm at discharge,23.0,23.0,23.0,91,match,
+e_proportions,% < 20 mm at discharge,25.0,25.0,25.274725274725274,91,match,
+e_proportions,% moved from < 20 to >= 20 mm,27.0,27.0,27.47252747252747,91,match,paper: 27% went from non-functional to functional; 52%-25% also equals 27 if rounded percentages are subtracted
+e_proportions,net change in % < 20 mm (percentage points),27.0,26.0,26.373626373626372,91,mismatch,
+table1_descriptives,mean age (years),5.0,5.0,4.758241758241758,91,match,
+table1_descriptives,SD age (years),5.0,5.0,4.566400623249634,91,match,
+table1_descriptives,mean physio sessions,11.0,11.0,11.466666666666667,90,match,
+table1_descriptives,SD physio sessions,6.0,6.0,5.8945794943940095,90,match,
+table1_descriptives,mean length of stay (days),25.0,25.0,25.344444444444445,90,match,
+table1_descriptives,SD length of stay (days),16.0,16.0,16.46116376837429,90,match,
