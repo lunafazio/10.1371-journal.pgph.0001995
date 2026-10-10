@@ -3,10 +3,10 @@ title: "10.1371-journal.pgph.0001995"
 message: "If you use this software, please cite it as below."
 type: software
 authors:
-  - family-names: "Fazio"
-    given-names: "Luna"
-    orcid: "https://orcid.org/0000-0003-0927-0907"
-    affiliation: "Institute for Replication"
+- family-names: "Fazio"
+  given-names: "Luna"
+  orcid: "https://orcid.org/0000-0003-0927-0907"
+  affiliation: "Institute for Replication"
 repository-code: "https://github.com/lunafazio/10.1371-journal.pgph.0001995"
 license: MIT
 version: "0.1.0"
@@ -23,26 +23,29 @@ date-released: "2026-10-10"
 # named was gone and "edit by hand" was the only path left. Two repos built from
 # this template then recorded the version DOI two different ways — one a
 # structured identifier, one a prose comment. Hence the automation.)
-doi: "{{ZENODO_DOI}}"
+doi: "10.5281/zenodo.23281225"
 identifiers:
-  - type: doi
-    value: "{{ZENODO_DOI}}"
-    description: "Concept DOI (resolves to the latest version) — cite the project"
-  # On release, the workflow adds:
-  #   - type: doi   value: <version DOI>  "Version DOI for vX.Y.Z — pins this exact release; cite this from nanopubs"
-  #   - type: swh   value: swh:1:rev:<commit>;origin=<repo>  "Software Heritage ID of the vX.Y.Z source tree"
+- type: doi
+  value: 10.5281/zenodo.23281225
+  description: Concept DOI (resolves to the latest version) — cite the project
+- type: doi
+  value: 10.5281/zenodo.23281226
+  description: Version DOI for v0.1.0 — pins this exact release; cite this from nanopubs
+- type: swh
+  value: swh:1:rev:41781b25c0dc3f3794c83c2203924a82328482bb;origin=https://github.com/lunafazio/10.1371-journal.pgph.0001995
+  description: Software Heritage ID of the v0.1.0 source tree
 keywords:
-  - reproduction
-  - computational reproducibility
-  - reproducibility
-  - FORRT
-  - nanopublication
-  - Science-Live
+- reproduction
+- computational reproducibility
+- reproducibility
+- FORRT
+- nanopublication
+- Science-Live
 references:
-  - type: article
-    title: "Physiotherapy and associated factors affecting mouth opening changes in noma patients during initial hospitalization at an MSF-supported hospital in Northwest Nigeria—A retrospective cohort study"
-    authors:
-      - family-names: "Oluwalomola"
-        given-names: "Oluwole Victor"
-    year: "2023"
-    doi: "10.1371/journal.pgph.0001995"
+- type: article
+  title: "Physiotherapy and associated factors affecting mouth opening changes in noma patients during initial hospitalization at an MSF-supported hospital in Northwest Nigeria—A retrospective cohort study"
+  authors:
+  - family-names: "Oluwalomola"
+    given-names: "Oluwole Victor"
+  year: "2023"
+  doi: "10.1371/journal.pgph.0001995"
